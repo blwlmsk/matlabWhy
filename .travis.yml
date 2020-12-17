@@ -1,0 +1,8 @@
+language: matlab
+matlab: R2020b
+jobs:
+  include:
+  - stage: why
+    script: matlab -batch 'why'
+  - stage: hello world
+    script: matlab -batch 'disp('hello world!')'
